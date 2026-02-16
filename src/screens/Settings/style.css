@@ -1,0 +1,122 @@
+:root {
+  --light-blue: #F5F7FA;
+  --gray-50: #F9FAFB;
+  --gray-200: #EBF0ED;
+  --gray-300: #D1D5DB;
+  --gray-500: #6B7280;
+  --gray-600: #4B5563;
+  --gray-700: #374151;
+  --gray-900: #111827;
+  --primary-color: #10B981;
+  --shadow: 0 6px 12px rgba(0, 0, 0, 0.04);
+  --border-radius: 8px;
+}
+
+.admin-settings-container {
+  width: 100%;
+  padding: 20px;
+  background: var(--light-blue);
+  /* overflow-y: auto; */
+  height: max-content;
+}
+
+.settings-section {
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--gray-200);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.settings-section h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: 1.5rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  margin-bottom: 0.5rem;
+}
+
+.form-group select,
+.form-group input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #EBF0ED;
+  border-width: 1px;
+  border-radius: var(--border-radius);
+  font-size: 0.875rem;
+  background: #FAFAFA;
+}
+
+.form-group input {
+  padding-right: 2.5rem; /* Space for password visibility toggle if added */
+}
+
+.button-group{
+    align-items:flex-end;
+}
+
+.save-btn {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.save-btn:hover {
+  background: #059669;
+}
+
+.password-actions {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.forgot-password {
+  color: var(--primary-color);
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.change-password-btn {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.change-password-btn:hover {
+  background: #059669;
+}

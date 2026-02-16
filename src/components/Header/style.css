@@ -1,0 +1,278 @@
+/* style.css */
+
+.header {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: white;
+  /* border-bottom: 1px solid #ddd; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  /* position: relative; */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sidebar-toggle {
+  color: rgba(0,0,0,0.5);
+  background-color: none;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.sidebar-toggle:hover {
+  color: #28846A;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  min-height: 38px;
+  padding: 0.25rem 10px;
+  border-radius: 10px;
+  border: 1px solid #ECF0F4;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  /* background-color: yellow; */
+  /* margin: -0.25rem; */
+}
+
+.search-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  /* background-color: red; */
+  /* font-size: 14px; */
+  /* margin-top: 10px; */
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.icon-wrapper {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #CBD5E14D;
+  border-radius: 50%;
+  /* padding: 10; */
+}
+
+.icon-wrapper:hover {
+  transform: scale(1.1);
+}
+
+.notification-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 10px;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-badge.orange {
+  background-color: #ff5722;
+}
+
+.notification-badge.blue {
+  background-color: #2196f3;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.user-profile img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.user-role {
+  font-size: 12px;
+  color: gray;
+}
+
+.settings-icon {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  color: #575864;
+}
+
+.settings-icon:hover {
+  transform: rotate(20deg);
+}
+
+
+/* Add these styles to your existing style.css */
+
+/* Notification Popup - Exact Match to Screenshot */
+.notifications-popup {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 340px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow: hidden;
+  animation: fadeIn 0.2s ease-out;
+  border: 1px solid #e5e7eb;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.notifications-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.notifications-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.notifications-list {
+  max-height: 380px;
+  overflow-y: auto;
+  padding: 8px 0;
+}
+
+.notification-item {
+  display: flex;
+  padding: 12px 20px;
+  border-bottom: 1px solid #f3f4f6;
+  transition: background-color 0.2s;
+}
+
+.notification-item:hover {
+  background-color: #f9fafb;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.notification-number {
+  font-size: 14px;
+  color: #6b7280;
+  margin-right: 12px;
+  min-width: 16px;
+}
+
+.notification-content {
+  flex: 1;
+}
+
+.notification-title {
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.notification-detail {
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.notification-detail:last-child {
+  margin-bottom: 0;
+}
+
+.chevron-icon {
+  color: #9ca3af;
+  margin-right: 6px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.notifications-footer {
+  padding: 12px 20px;
+  text-align: center;
+  border-top: 1px solid #f3f4f6;
+}
+
+.view-all-btn {
+  background: none;
+  border: none;
+  color: #3b82f6;
+  font-weight: 500;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+}
+
+.view-all-btn:hover {
+  color: #2563eb;
+  background-color: #f0f5ff;
+}
+
+/* Make sure the header has relative positioning */
+.header {
+  position: relative;
+}
