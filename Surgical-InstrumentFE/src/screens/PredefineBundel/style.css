@@ -1,0 +1,13 @@
+.predefine-bundel-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.predefine-bundel-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
+}

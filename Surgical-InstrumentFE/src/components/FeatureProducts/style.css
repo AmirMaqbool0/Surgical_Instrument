@@ -1,0 +1,153 @@
+.feature-product-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+}
+
+.feature-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature-header span {
+    font-size: 40px;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.feature-carousel-btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.prev, .next {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.prev:hover:not(.disabled), .next:hover:not(.disabled) {
+    background: var(--green);
+    color: white;
+}
+
+.prev.disabled, .next.disabled {
+    border-color: rgba(0, 0, 0, 0.2);
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.slick-list {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-track {
+    display: flex;
+    /* Remove centering and gap */
+}
+
+.slick-slide {
+    display: block;
+    padding: 0 10px; /* 20px gap between cards */
+}
+
+.product-slide {
+    display: block;
+}
+
+.feature-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-btn button {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background: var(--green);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.feature-btn button:hover {
+    background: var(--dark-green);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .feature-header span {
+        font-size: 28px;
+    }
+
+    .prev, .next {
+        width: 35px;
+        height: 35px;
+    }
+}
+@media screen and (max-width:560px) {
+    .feature-product-container{
+        padding: 50px 20px;
+    }
+}
+
+/* For single product layout */
+.feature-product-carousel .slick-track {
+    display: flex;
+    justify-content: center;
+    gap: 0; /* Ensure no gap */
+}
+
+.no-products-message {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+/* Remove extra margin from slick-slide > div */
+.feature-product-carousel .slick-slide > div {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Remove any centering or gap from carousel */
+.feature-product-carousel .slick-list,
+.feature-product-carousel .slick-track {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Additional overrides to match Instruments page spacing */
+.feature-product-carousel .slick-slide {
+    margin: 0 !important;
+    padding: 0 10px !important; /* Match Instruments page spacing */
+}
+
+.feature-product-carousel .slick-slide > div {
+    margin: 0 10px !important; /* Match Instruments page spacing */
+    padding: 0 !important;
+}
+
+/* Override any slick default styles */
+.feature-product-carousel .slick-list,
+.feature-product-carousel .slick-track {
+    margin: 0 !important;
+    padding: 0 !important;
+}

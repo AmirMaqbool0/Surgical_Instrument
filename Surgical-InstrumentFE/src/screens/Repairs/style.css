@@ -1,0 +1,213 @@
+.repairs-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.repairs-detail {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background: var(--light-blue);
+}
+
+.repairs-details-left {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.repairs-details-left span {
+  font-size: 30px;
+  color: var(--black);
+  font-weight: 600;
+}
+
+.repairs-details-left p {
+  font-size: 16px;
+  color: var(--black);
+  font-weight: 400;
+}
+
+.repairs-details-left button {
+  width: 250px;
+  height: 40px;
+  color: var(--white);
+  background: var(--green);
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+}
+
+.repairs-detail-right {
+  width: 47%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.repairs-detail-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.repairs-details2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.repairs-details2-left {
+  width: 47%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.repairs-details2-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.repairs-details2-right {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.repairs-detail-right-header {
+  display: flex;
+  align-items: center;
+  /* gap: 10px; */
+
+}
+
+.repairs-detail-right-header span {
+  font-size: 16px;
+  color: var(--green);
+  font-weight: 400;
+}
+
+.repairs-detail-right-point {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.repairs-detail-right-point span {
+  font-size: 16px;
+  color: var(--gray);
+  font-weight: 400;
+}
+
+.repair-detail2-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.repair-detail2-text span {
+  font-size: 30px;
+  color: var(--black);
+  font-weight: 600;
+}
+
+.repair-detail2-text p {
+  font-size: 16px;
+  color: var(--black);
+  font-weight: 400;
+}
+
+.repairs-details3 {
+  width: 100%;
+  display: flex;
+  height: fit-content;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.repairs-details3-left {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: fit-content;
+  /* padding: 20px; */
+}
+
+.repairs-details3-left span {
+  font-size: 30px;
+  color: var(--black);
+  font-weight: 600;
+}
+
+.repairs-details2-left p {
+  font-size: 16px;
+  color: var(--black);
+  font-weight: 400;
+}
+
+.repairs-details3-left button {
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  background: var(--green);
+  border-radius: 5px;
+  color: var(--white);
+  cursor: pointer;
+  border: none;
+
+}
+
+.repairs-details3-right {
+  width: 47%;
+  height: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.repairs-details3-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width:980px) {
+
+  .repairs-detail,
+  .repairs-details2,
+  .repairs-details3 {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .repairs-details-left,
+  .repairs-detail-right,
+  .repairs-details2-left,
+  .repairs-details2-right,
+  .repairs-details3-left,
+  .repairs-details3-right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:560px) {
+  .repairs-detail,
+  .repairs-details2,
+  .repairs-details3{
+    padding: 50px 20px;
+  }
+  .repairs-details3-left span,.repair-detail2-text span,.repairs-details-left span{
+    font-size: 25px;
+  }
+}

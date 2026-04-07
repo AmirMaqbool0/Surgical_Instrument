@@ -1,0 +1,332 @@
+.checkout-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background: var(--white);
+}
+
+.checkout-content {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.returing-btn {
+    width: 100%;
+    min-height: 60px;
+    padding: 15px;
+    border-radius: 5px;
+    background: var(--light-blue);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.returing-btn span {
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.returing-btn p {
+    font-size: 16px;
+    color: var(--dark-green);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.checkout-form-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.checkout-content-right {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-heading span {
+    font-size: 18px;
+    color: var(--black);
+    font-weight: 500;
+    position: relative;
+    margin-left: 20px;
+}
+
+.form-heading span::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    left: -20px;
+    top: 0;
+    background: var(--dark-green);
+}
+
+.biling-form {
+    width: 100%;
+    height: fit-content;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+}
+
+.biling-form span {
+    color: var(--black);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.form-inputs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-input {
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    background: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+.form-input input {
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 14px;
+}
+
+.cities-inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.city-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.city-input span {
+    font-size: 18px;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.city-input input {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: var(--gray);
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.save-check-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.save-check-box span {
+    font-size: 16px;
+    color: rgba(92, 114, 125, 1);
+    font-weight: 500;
+}
+
+.notes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.notes textarea {
+    width: 100%;
+    height: 150px;
+    background: var(--gray);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.payment-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid var(--gray);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.payment-option {
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.payment-option input[type="radio"] {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    accent-color: var(--dark-green);
+}
+
+.payment-option .label-text {
+    margin-left: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-option img {
+    height: 20px;
+    object-fit: contain;
+}
+
+.payment-option .payment-info {
+    margin-left: 25px;
+    padding: 15px;
+    background: var(--white);
+    border-radius: 5px;
+    font-size: 14px;
+    color: #444;
+}
+
+.privacy-text {
+    font-size: 14px;
+    color: #6e6e6e;
+    line-height: 1.5;
+}
+
+.place-order {
+    padding: 15px 25px;
+    background: var(--dark-green);
+    color: var(--white);
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+}
+
+.checkout-content-left {
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cart-total-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background: #F7F8FA;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black);
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 10px;
+}
+
+.cart-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.cart-row.total {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--black);
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .checkout-content {
+        padding: 30px;
+    }
+    
+    .form-input {
+        width: calc(50% - 10px);
+    }
+    
+    .cities-inputs {
+        flex-direction: row;
+    }
+    
+    .city-input {
+        width: calc(33.33% - 14px);
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .checkout-content {
+        padding: 50px;
+    }
+    
+    .checkout-form-content {
+        flex-direction: row;
+    }
+    
+    .checkout-content-right {
+        width: 60%;
+    }
+    
+    .checkout-content-left {
+        width: 38%;
+    }
+    
+    .place-order {
+        width: fit-content;
+    }
+}

@@ -1,0 +1,138 @@
+.home-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.feature-about {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature-about-left {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feature-about-top {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.feature-about-top span {
+    font-size: 16px !important;
+    color: var(--dark-green) !important;
+    font-weight: 400 !important;
+}
+
+.feature-about-point {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.feature-about-point span {
+    font-size: 16px !important;
+    color: var(--black) !important;
+    font-weight: 400 !important;
+}
+
+.feature-about-left span {
+    font-size: 40px;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.feature-about-left p {
+    font-size: 15px;
+    color: var(--black);
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.feature-about-left button {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background: var(--green);
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.feature-about-right {
+    width: 47%;
+    height: fit-content;
+}
+
+.feature-about-right video {
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.products-brands {
+    width: 100%;
+    height: 100px;
+    background: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.brand-logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-left: 70px;
+}
+
+@media screen and (max-width:948px) {
+    .feature-about {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .feature-about-left {
+        width: 100%;
+    }
+
+    .feature-about-right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:560px) {
+   .feature-about{
+    padding: 50px 20px;
+   }   
+   .feature-about-left span {
+    font-size: 30px;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.feature-about-left p {
+    font-size: 15px;
+    color: var(--black);
+    font-weight: 400;
+    line-height: 20px;
+}
+.feature-about-point span {
+    font-size: 14px !important;
+    color: var(--black) !important;
+    font-weight: 400 !important;
+}
+}

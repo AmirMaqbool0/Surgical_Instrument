@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+}
+
+:root {
+  --green: rgba(0, 180, 130, 1);
+  --dark-green: rgba(40, 132, 106, 1);
+  --white: white;
+  --black: black;
+  --background: #F9F9F9;
+  --light-blue: #E2F6F1;
+  --gray: #CBCBCB;
+  --light-gray: rgba(92, 114, 125, 1);
+}
+
+.app {
+  overflow: hidden;
+}

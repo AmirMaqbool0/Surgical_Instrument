@@ -1,0 +1,293 @@
+.register-account-main-box {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 30px;
+}
+
+.register-account-main-container {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+}
+.register-accont-heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.register-accont-heading span {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--black);
+}
+.register-accont-heading p {
+  font-size: 16px;
+  color: var(--light-gray);
+  text-align: center;
+}
+.register-inputs-main-box {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  gap: 20px;
+  /* border: 2px solid red; */
+}
+.register-inputs-main-box input {
+  height: 52px;
+  width: 500px;
+  border: none;
+  outline: none;
+  padding: 20px;
+  background-color: var(--gray);
+  font-size: 16px;
+  border-radius: 5px;
+}
+.confirmation-text {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.confirmation-text-box input {
+  padding-top: 10px;
+}
+.confirmation-text-box {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+.confirmation-text-box span {
+  font-size: 16px;
+  color: var(--light-gray);
+  font-weight: 400;
+  max-width: 400px;
+
+}
+.register-account-button button {
+  height: 42px;
+  width: 150px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--green);
+  cursor: pointer;
+}
+
+.register-account-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.register-account-button button{
+  font-size: 16px;
+}
+.register-account-term-poilices-text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.register-account-term-poilices-text span {
+  font-size: 16px;
+  color: var(--light-gray);
+  font-weight: 400;
+}
+input[type="checkbox"] {
+  appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px !important;
+  height: 20px !important;
+  border: 1px solid var(--green) ;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style when checkbox is checked */
+input[type="checkbox"]:checked {
+  background-color: var(--green); 
+  border: 2px solid var(--green);
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+}
+
+/* Add the white checkmark when checked */
+input[type="checkbox"]:checked::before {
+  content: '\2713'; 
+  display: block;
+  text-align: center;
+  color: var(--white);
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+
+@media screen and (max-width:560px) {
+  .register-account-main-box {
+    padding: 50px 20px;
+  }
+  .register-inputs-main-box{
+    width: 100%;
+  }
+  .register-inputs-main-box input{
+    width: 100%;
+  }
+  .register-accont-heading span{
+    font-size: 27px;
+  }
+  .confirmation-text-box span{
+    max-width: 250px;
+  }
+}
+
+/* Add these to your existing CSS */
+
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--light-gray);
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+.form-error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.input-error {
+  border: 1px solid red !important;
+}
+
+.text-error {
+  color: red;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--green);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  flex-shrink: 0;
+}
+
+.checkbox-container input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-container input[type="checkbox"]:checked + .checkmark {
+  background-color: var(--green);
+}
+
+.spin-loader {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.policy-links {
+  display: flex;
+  gap: 10px;
+}
+
+.policy-links a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+.policy-links a:hover {
+  text-decoration: underline;
+}
+
+.sign-in-link {
+  display: flex;
+  gap: 5px;
+}
+
+.sign-in-link a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+.sign-in-link a:hover {
+  text-decoration: underline;
+}
+
+.register-account-button button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.register-account-button button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

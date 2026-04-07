@@ -1,0 +1,249 @@
+.home2-wrapper {
+  background: #f7f7f7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.home2-main {
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 16px 0 16px;
+  flex: 1;
+}
+
+.home2-topbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.home2-category-select {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.home2-search {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.home2-search-btn {
+  background: #219653;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.home2-user-info {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+}
+
+.home2-user-role {
+  background: #e0f7fa;
+  color: #219653;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.home2-cart-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.home2-cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #eb5757;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  min-width: 22px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  z-index: 2;
+}
+
+.home2-cart {
+  background: #f7f7f7;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.home2-welcome {
+  margin-top: 32px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.home2-subtext {
+  color: #888;
+  margin-bottom: 32px;
+}
+
+.home2-cards-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.home2-card {
+  flex: 1;
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.home2-card-green { background: #eafaf1; border-left: 6px solid #219653; }
+.home2-card-blue { background: #eaf4fa; border-left: 6px solid #2d9cdb; }
+.home2-card-red { background: #faeaea; border-left: 6px solid #eb5757; }
+
+.home2-main-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.home2-add-cart, .home2-quick-nav, .home2-notifications {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px 16px;
+  flex: 1;
+  min-width: 220px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.home2-add-cart label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: #555;
+}
+.home2-add-cart input, .home2-add-cart select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+.home2-add-btn {
+  width: 100%;
+  background: #219653;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.home2-quick-nav ul, .home2-notifications ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.home2-quick-nav li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+.home2-quick-nav li.active {
+  color: #219653;
+  font-weight: 600;
+}
+
+.home2-notifications li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.home2-notifications span {
+  background: #e0f7fa;
+  color: #219653;
+  border-radius: 12px;
+  padding: 2px 10px;
+  font-size: 13px;
+  min-width: 28px;
+  text-align: center;
+}
+
+.home2-banner {
+  background: #217a6b;
+  color: #fff;
+  border-radius: 16px;
+  margin: 40px 0 0 0;
+  padding: 40px 0 32px 0;
+  text-align: center;
+  position: relative;
+}
+.home2-banner-content h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+.home2-banner-content p {
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+}
+.home2-banner-content button {
+  background: #fff;
+  color: #219653;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 28px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.quick-add-dropdown {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  z-index: 10;
+  width: 90%;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 2px;
+}
+.quick-add-dropdown-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.quick-add-dropdown-item:hover {
+  background: #eafaf1;
+}
+.home2-add-cart {
+  position: relative;
+}
+
+.home2-user-info span,
+.home2-user-role,
+.home2-cart-wrapper {
+  cursor: pointer;
+} 

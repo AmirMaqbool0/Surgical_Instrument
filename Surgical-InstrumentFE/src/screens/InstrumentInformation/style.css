@@ -1,0 +1,231 @@
+.instrument-information-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.instru-information-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
+}
+.instru-info-detail{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.instru-detail-left{
+    width: 47%;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.instru-detail-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.instru-detail-right{
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.instro-detail-header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.instro-detail-header span{
+    font-size: 16px;
+    color: var(--green);
+    font-weight: 500;
+}
+.instru-header-point{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+.instru-header-point span{
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 500;
+}
+.instru-detail-right-text{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.instru-detail-right-text span{
+    font-size: 40px;
+    color: var(--black);
+    font-weight: 600;
+}
+.instru-detail-right-text p{
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 400;
+}
+.instru-detail-right-text button{
+    width: 170px;
+    height: 40px;
+    background: var(--green);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 16px;
+}
+.instru-info2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+    background: var(--light-blue);
+}
+.instro-info2-left{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 47%;
+}
+.instro-info2-left span{
+    font-size: 40px;
+    color: var(--black);
+    font-weight: 600;
+}
+.instro-info2-left p{
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 400;
+}
+.instru-info2-right{
+    width: 47%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.instru-info2-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.manufacturing-process{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0px 50px;
+}
+.manufacturing-heading{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.manufacturing-heading span{
+    font-size: 40px;
+    color: var(--black);
+    font-weight: 600;
+}
+.manufacturing-heading p{
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 400;
+    text-align: center;
+    line-height: 25px;
+}
+.manufacturing-heading button{
+    width: 160px;
+    background: var(--green);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: var(--white);
+    height: 40px;
+    cursor: pointer;
+}
+.manufacturing-chart{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.manufacturing-chart img{
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+.instru-info3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+.instru-info-left{
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.instru-info-left span{
+    font-size: 40px;
+    color: var(--black);
+    font-weight: 600;
+}
+.instru-info-left p{
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 400;
+}
+.instru-info-left button{
+    width: 120px;
+    height: 40px;
+    color: var(--white);
+    background: var(--green);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.instru-info-right{
+    width: 47%;
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.instru-info-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:940px) {
+    .instru-info-detail,.instru-info2,.instru-info3{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .instru-detail-left,.instro-info2-left,.instru-info-left{
+        width: 100%;
+    }
+    .instru-detail-right,.instru-info2-right,.instru-info-right{
+        width: 100%;
+    }
+}
+@media screen and (max-width:560px){
+    .manufacturing-chart img{
+        height: fit-content;
+    }
+  .instru-information-content,.instru-info2,.instru-info3,.manufacturing-process{
+    padding: 50px 20px;
+  }
+  .instru-detail-right-text span,.instro-info2-left span,.instru-info-left span,.manufacturing-heading span{
+    font-size: 30px;
+  }
+}
